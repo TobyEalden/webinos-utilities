@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>webinos permission request</title>
+	<title>AEGIS PPG Payment Request</title>
     <script type="text/javascript" src="/webinos.js"></script>
     <!--head-->
-    <link rel="stylesheet" href="prompt/prompt.css">
-    <script type="text/javascript" src="prompt/prompt.js"></script>
+    <link rel="stylesheet" href="appgPrompt/appgPrompt.css">
+    <script type="text/javascript" src="appgPrompt/appgPrompt.js"></script>
     <!--/head-->
 </head>
 <body id="user-permissions-page">
@@ -15,18 +15,22 @@
     <!--content-->
         <div id="user-permission-list-container" class="prompt-content">
             <div id="user-permission-list-container-content" class="hidden">
-                <div class="user-data">
-                    <img src="prompt/img/userPlaceholder.png" id="newUserReqImg">
-                    <h1 id="newUserReqName">Name</h1>
-                    <h2>would like to access a service on your device</h2>
-                </div>
+                    <img src="appgPrompt/img/logo.png" id="newUserReqImg">
+                    <h1>Personal Payment Gateway</h1>
+                    <hr />
+                    <br />
+                    <h1>Payment Request</h1>
 
                 <div class="permissions-controls" id="newUserReqButtons"></div>
-                <div class="button continueButton" id="newUserReqContinue">Continue</div>
                 <div class="info" id="newUserReqInfo">
-                    <p>If you click <b>allow</b>, <span id="newUserReqNameInfo1">*Name*</span> will be able to *access* the service on your devices.</p>
-                    <p>Click <b>deny</b> if you don't know who <span id="newUserReqNameInfo2">*Name*</span> is, or if you do not want him or her to access the service.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;If you click <b>Confirm</b>, the payment will be made.</p>
+                    <p>&nbsp;</p>
                 </div>
+                <div>&nbsp;</div>
+                <div class="button continueButton" id="newUserReqContinue">Confirm Payment</div><br />
+                <div class="button declineButton" id="newUserReqDecline">Decline Payment</div><br />
+                <div class="button closeButton" id="newUserReqClose">Decide later</div>
             </div>
             <div id="loading" class="loading">&nbsp;</div>
         </div>

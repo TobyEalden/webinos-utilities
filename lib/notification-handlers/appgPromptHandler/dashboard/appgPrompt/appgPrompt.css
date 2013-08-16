@@ -17,7 +17,7 @@
 	height: 3.7em;
 }
 
-.continueButton {
+.continueButton, .declineButton, .closeButton {
 	height: 1.7em;
 }
 
@@ -82,4 +82,5 @@
 
 .permissions-controls {
     margin: 2em 0;
+    padding: 10px;
 }
