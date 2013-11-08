@@ -138,7 +138,7 @@
                     findOp.found = true;
                     callback.onFound(service);
                 } else {
-                    var serviceErrorMsg = 'Cannot instantiate webinos service.';
+                    var serviceErrorMsg = 'Cannot instantiate webinos service: ' + baseServiceObj.api;
                     if (typeof callback.onError === 'function') {
                         callback.onError(new DOMError("onServiceAvailable", serviceErrorMsg));
                     }
